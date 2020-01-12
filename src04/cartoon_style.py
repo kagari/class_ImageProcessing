@@ -76,9 +76,9 @@ if __name__ == "__main__":
     # 使用する要素を初期化
     file_path = sys.argv[1]
     tone_path = sys.argv[2]
-    r = sys.argv[3] if args > 3 else 1
-    bright = sys.argv[4] if args > 4 else 20
-    grayzone = sys.argv[5] if args > 5 else 40
+    r = float(sys.argv[3]) if args > 3 else 1
+    bright = int(sys.argv[4]) if args > 4 else 20
+    grayzone = int(sys.argv[5]) if args > 5 else 40
     
     # 元画像とトーン画像の読み込み
     img = Image.open(file_path)
